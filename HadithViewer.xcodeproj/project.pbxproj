@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37F19706151FE16D00A7249A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F19705151FE16D00A7249A /* UIKit.framework */; };
+		37F19708151FE16D00A7249A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F19707151FE16D00A7249A /* Foundation.framework */; };
+		37F1970A151FE16D00A7249A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F19709151FE16D00A7249A /* CoreGraphics.framework */; };
+		37F1970C151FE16D00A7249A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F1970B151FE16D00A7249A /* CoreData.framework */; };
+		37F19712151FE16D00A7249A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37F19710151FE16D00A7249A /* InfoPlist.strings */; };
+		37F19714151FE16D00A7249A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F19713151FE16D00A7249A /* main.m */; };
+		37F19718151FE16D00A7249A /* HVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F19717151FE16D00A7249A /* HVAppDelegate.m */; };
+		37F1971B151FE16D00A7249A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37F19719151FE16D00A7249A /* MainStoryboard.storyboard */; };
+		37F1971E151FE16D00A7249A /* HadithViewer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37F1971C151FE16D00A7249A /* HadithViewer.xcdatamodeld */; };
+		37F19721151FE16D00A7249A /* HVMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F19720151FE16D00A7249A /* HVMasterViewController.m */; };
+		37F19724151FE16D00A7249A /* HVDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F19723151FE16D00A7249A /* HVDetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		37F19701151FE16D00A7249A /* HadithViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HadithViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37F19705151FE16D00A7249A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		37F19707151FE16D00A7249A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		37F19709151FE16D00A7249A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		37F1970B151FE16D00A7249A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		37F1970F151FE16D00A7249A /* HadithViewer-Info.plist */ = {isa = PBXFileReference; path = "HadithViewer-Info.plist"; sourceTree = "<group>"; };
+		37F19711151FE16D00A7249A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		37F19713151FE16D00A7249A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		37F19715151FE16D00A7249A /* HadithViewer-Prefix.pch */ = {isa = PBXFileReference; path = "HadithViewer-Prefix.pch"; sourceTree = "<group>"; };
+		37F19716151FE16D00A7249A /* HVAppDelegate.h */ = {isa = PBXFileReference; path = HVAppDelegate.h; sourceTree = "<group>"; };
+		37F19717151FE16D00A7249A /* HVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVAppDelegate.m; sourceTree = "<group>"; };
+		37F1971A151FE16D00A7249A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		37F1971D151FE16D00A7249A /* HadithViewer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HadithViewer.xcdatamodel; sourceTree = "<group>"; };
+		37F1971F151FE16D00A7249A /* HVMasterViewController.h */ = {isa = PBXFileReference; path = HVMasterViewController.h; sourceTree = "<group>"; };
+		37F19720151FE16D00A7249A /* HVMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVMasterViewController.m; sourceTree = "<group>"; };
+		37F19722151FE16D00A7249A /* HVDetailViewController.h */ = {isa = PBXFileReference; path = HVDetailViewController.h; sourceTree = "<group>"; };
+		37F19723151FE16D00A7249A /* HVDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVDetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37F196FE151FE16D00A7249A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F19706151FE16D00A7249A /* UIKit.framework in Frameworks */,
+				37F19708151FE16D00A7249A /* Foundation.framework in Frameworks */,
+				37F1970A151FE16D00A7249A /* CoreGraphics.framework in Frameworks */,
+				37F1970C151FE16D00A7249A /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37F196F6151FE16D00A7249A = {
+			isa = PBXGroup;
+			children = (
+				37F1970D151FE16D00A7249A /* HadithViewer */,
+				37F19704151FE16D00A7249A /* Frameworks */,
+				37F19702151FE16D00A7249A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		37F19702151FE16D00A7249A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37F19701151FE16D00A7249A /* HadithViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37F19704151FE16D00A7249A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37F19705151FE16D00A7249A /* UIKit.framework */,
+				37F19707151FE16D00A7249A /* Foundation.framework */,
+				37F19709151FE16D00A7249A /* CoreGraphics.framework */,
+				37F1970B151FE16D00A7249A /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37F1970D151FE16D00A7249A /* HadithViewer */ = {
+			isa = PBXGroup;
+			children = (
+				37F19716151FE16D00A7249A /* HVAppDelegate.h */,
+				37F19717151FE16D00A7249A /* HVAppDelegate.m */,
+				37F19719151FE16D00A7249A /* MainStoryboard.storyboard */,
+				37F1971F151FE16D00A7249A /* HVMasterViewController.h */,
+				37F19720151FE16D00A7249A /* HVMasterViewController.m */,
+				37F19722151FE16D00A7249A /* HVDetailViewController.h */,
+				37F19723151FE16D00A7249A /* HVDetailViewController.m */,
+				37F1971C151FE16D00A7249A /* HadithViewer.xcdatamodeld */,
+				37F1970E151FE16D00A7249A /* Supporting Files */,
+			);
+			path = HadithViewer;
+			sourceTree = "<group>";
+		};
+		37F1970E151FE16D00A7249A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				37F1970F151FE16D00A7249A /* HadithViewer-Info.plist */,
+				37F19710151FE16D00A7249A /* InfoPlist.strings */,
+				37F19713151FE16D00A7249A /* main.m */,
+				37F19715151FE16D00A7249A /* HadithViewer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		37F19700151FE16D00A7249A /* HadithViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37F19727151FE16D00A7249A /* Build configuration list for PBXNativeTarget "HadithViewer" */;
+			buildPhases = (
+				37F196FD151FE16D00A7249A /* Sources */,
+				37F196FE151FE16D00A7249A /* Frameworks */,
+				37F196FF151FE16D00A7249A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HadithViewer;
+			productName = HadithViewer;
+			productReference = 37F19701151FE16D00A7249A /* HadithViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37F196F8151FE16D00A7249A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HV;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = NA;
+			};
+			buildConfigurationList = 37F196FB151FE16D00A7249A /* Build configuration list for PBXProject "HadithViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 37F196F6151FE16D00A7249A;
+			productRefGroup = 37F19702151FE16D00A7249A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37F19700151FE16D00A7249A /* HadithViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37F196FF151FE16D00A7249A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F19712151FE16D00A7249A /* InfoPlist.strings in Resources */,
+				37F1971B151FE16D00A7249A /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37F196FD151FE16D00A7249A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F19714151FE16D00A7249A /* main.m in Sources */,
+				37F19718151FE16D00A7249A /* HVAppDelegate.m in Sources */,
+				37F1971E151FE16D00A7249A /* HadithViewer.xcdatamodeld in Sources */,
+				37F19721151FE16D00A7249A /* HVMasterViewController.m in Sources */,
+				37F19724151FE16D00A7249A /* HVDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		37F19710151FE16D00A7249A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37F19711151FE16D00A7249A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		37F19719151FE16D00A7249A /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37F1971A151FE16D00A7249A /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		37F19725151FE16D00A7249A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		37F19726151FE16D00A7249A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		37F19728151FE16D00A7249A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HadithViewer/HadithViewer-Prefix.pch";
+				INFOPLIST_FILE = "HadithViewer/HadithViewer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		37F19729151FE16D00A7249A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HadithViewer/HadithViewer-Prefix.pch";
+				INFOPLIST_FILE = "HadithViewer/HadithViewer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37F196FB151FE16D00A7249A /* Build configuration list for PBXProject "HadithViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37F19725151FE16D00A7249A /* Debug */,
+				37F19726151FE16D00A7249A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37F19727151FE16D00A7249A /* Build configuration list for PBXNativeTarget "HadithViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37F19728151FE16D00A7249A /* Debug */,
+				37F19729151FE16D00A7249A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		37F1971C151FE16D00A7249A /* HadithViewer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				37F1971D151FE16D00A7249A /* HadithViewer.xcdatamodel */,
+			);
+			currentVersion = 37F1971D151FE16D00A7249A /* HadithViewer.xcdatamodel */;
+			path = HadithViewer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 37F196F8151FE16D00A7249A /* Project object */;
+}
