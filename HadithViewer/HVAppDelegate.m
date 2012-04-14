@@ -10,6 +10,8 @@
 
 #import "HVMasterViewController.h"
 
+#import "HVViewController.h"
+
 @implementation HVAppDelegate
 
 @synthesize window = _window;
@@ -21,8 +23,17 @@
 {
     // Override point for customization after application launch.
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-    HVMasterViewController *controller = (HVMasterViewController *)navigationController.topViewController;
+   // HVMasterViewController *controller = (HVMasterViewController *)navigationController.topViewController;
+    HVViewController *controller = (HVViewController *)navigationController.topViewController;
     controller.managedObjectContext = self.managedObjectContext;
+    UIImage *pattern = [UIImage imageNamed:@"bgrnd.jpg"];
+    
+    // Set the image as a background pattern
+    [[controller view] setBackgroundColor:[UIColor colorWithPatternImage:pattern]];
+    
+    UIImage* tabBarBackground = [UIImage imageNamed:@"tabbar.png"];
+    [controller.navigationController.navigationBar setBackgroundImage:tabBarBackground forBarMetrics:UIBarMetricsDefault];
+    
     return YES;
 }
 							
@@ -105,8 +116,24 @@
     if (__persistentStoreCoordinator != nil) {
         return __persistentStoreCoordinator;
     }
+
     
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"HadithViewer.sqlite"];
+    NSString *storePath = [[self applicationDocumentsDirectory] stringByAppendingPathComponent: @"HadithViewer.sqlite"];
+    /*
+     Set up the store.
+     For the sake of illustration, provide a pre-populated default store.
+     */
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    // If the expected store doesn't exist, copy the default store.
+    if (![fileManager fileExistsAtPath:storePath]) {
+        NSString *defaultStorePath = [[NSBundle mainBundle] pathForResource:@"HadithViewer" ofType:@"sqlite"];
+        
+        if (defaultStorePath) {
+            [fileManager copyItemAtPath:defaultStorePath toPath:storePath error:NULL];
+        }
+    }
+    
+    NSURL *storeURL = [NSURL fileURLWithPath:storePath];
     
     NSError *error = nil;
     __persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
@@ -143,10 +170,14 @@
 
 #pragma mark - Application's Documents directory
 
-// Returns the URL to the application's Documents directory.
-- (NSURL *)applicationDocumentsDirectory
-{
-    return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+/**
+ Returns the path to the application's documents directory.
+ */
+- (NSString *)applicationDocumentsDirectory {
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *basePath = ([paths count] > 0) ? [paths objectAtIndex:0] : nil;
+    return basePath;
 }
 
 @end

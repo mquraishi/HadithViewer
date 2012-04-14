@@ -1,5 +1,5 @@
 //
-//  HVMasterViewController.h
+//  HVSecondViewController.h
 //  HadithViewer
 //
 //  Created by Mohammad Quraishi on 3/25/12.
@@ -10,11 +10,11 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
-@interface HVMasterViewController : UITableViewController {
-    NSArray *sortedKeys;
-}
+@interface HVSecondViewController : UITableViewController <UITableViewDelegate>
 
+@property (strong, nonatomic) NSMutableArray *detail;
+@property (nonatomic) int displayVolume;
+@property (nonatomic) int displayBook;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-@property (strong, nonatomic) NSMutableDictionary *bookNames;
 
 @end

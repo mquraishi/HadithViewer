@@ -8,10 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HVDetailViewController : UIViewController
+@interface HVDetailViewController : UIViewController <UITextViewDelegate>
+{
+    UIImageView *upArrow, *downArrow;
+}
 
-@property (strong, nonatomic) id detailItem;
-
-@property (strong, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
-
+@property (nonatomic) int hBookNumber;
+@property (nonatomic) int hNumber;
+@property (strong, nonatomic) NSMutableArray *detail;
+@property (strong, nonatomic) IBOutlet UIScrollView *detailDescription;
+@property (strong, nonatomic) IBOutlet UITextView *detailDescriptionLabel;
+/*
+- (IBAction)handlePinch:(UIPinchGestureRecognizer *)recognizer;
+- (IBAction)handlePan:(UIPanGestureRecognizer *)recognizer;
+*/
 @end

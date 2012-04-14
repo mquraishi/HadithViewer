@@ -1,19 +1,30 @@
 //
-//  HVMasterViewController.m
+//  HVSecondViewController.m
 //  HadithViewer
 //
 //  Created by Mohammad Quraishi on 3/25/12.
 //  Copyright (c) 2012 NA. All rights reserved.
 //
 
-#import "HVMasterViewController.h"
-#import "Hadith.h"
 #import "HVSecondViewController.h"
+#import "Hadith.h"
+#import "HVDetailViewController.h"
 
-@implementation HVMasterViewController
+@implementation HVSecondViewController
 
-@synthesize managedObjectContext = __managedObjectContext;
-@synthesize bookNames = _bookNames;
+@synthesize detail = _detail;
+@synthesize displayVolume = _displayVolume;
+@synthesize displayBook = _displayBook;
+@synthesize managedObjectContext = _managedObjectContext;
+
+#pragma mark - Managing the second level detail
+
+- (void)setDetail:(NSMutableArray *)newDetail
+{
+    if (_detail != newDetail) {
+        _detail = newDetail;
+    }
+}
 
 - (void)awakeFromNib
 {
@@ -26,8 +37,8 @@
 	// Do any additional setup after loading the view, typically from a nib.
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleDone target:nil action:nil];
     self.navigationItem.backBarButtonItem = backButton;
+    [self.navigationItem setTitle:[NSString stringWithFormat:@"Volume %d - Book %d", _displayVolume, _displayBook]];
     backButton.tintColor = [UIColor blackColor];
-    sortedKeys = [Hadith returnSortedArrayOfKeys:self.bookNames];
 }
 
 - (void)viewDidUnload
@@ -51,16 +62,15 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.bookNames count];
+        return [self.detail count];
 }
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"]; 
-    NSString *labelStr = [sortedKeys objectAtIndex:(indexPath.row)];
-    cell.textLabel.text = [[self bookNames] valueForKey:labelStr];
-    cell.textLabel.tag = [labelStr integerValue];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    Hadith *hData = [[self detail] objectAtIndex:indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"Hadith #%d Narrated by\n%@:",hData.number.intValue, hData.narrated];
+    cell.textLabel.tag = hData.number.integerValue;
     return cell;
 }
 
@@ -73,24 +83,22 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"showSecondLevel"]) {
+    if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+        Hadith *hData = [[self detail] objectAtIndex:indexPath.row];
         
-        NSMutableArray *hData = [Hadith hadithDataForBookNum:[NSNumber numberWithInteger:cell.textLabel.tag] inManagedObjectContext:self.managedObjectContext];
+        NSMutableArray *hD = [Hadith hadithTextForHadithNumber:cell.textLabel.tag andBookNum:hData.book inManagedObjectContext:self.managedObjectContext];
 
-        Hadith *hd = [hData objectAtIndex:0];
-
-        [[segue destinationViewController] setDetail:hData];
-        [[segue destinationViewController] setDisplayVolume:hd.volume.intValue];
-        [[segue destinationViewController] setDisplayBook:hd.book.intValue];
-        [[segue destinationViewController] setManagedObjectContext:self.managedObjectContext];
+        [[segue destinationViewController] setDetail:hD];
+        [[segue destinationViewController] setHBookNumber:hData.book.intValue];
+        [[segue destinationViewController] setHNumber:cell.textLabel.tag];
     }
 }   
+
 
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
 {
     [self.tableView endUpdates];
 }
-
 @end
