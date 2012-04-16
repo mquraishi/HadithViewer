@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3704DE16152BCDE000798372 /* HVSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3704DE15152BCDE000798372 /* HVSecondViewController.m */; };
+		372140DD153BA11200A882A4 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372140DB153BA11200A882A4 /* AddressBook.framework */; };
+		372140DE153BA11200A882A4 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372140DC153BA11200A882A4 /* AddressBookUI.framework */; };
+		37395BAB152144B2002540F2 /* HadithViewer.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 37395BAA152144B2002540F2 /* HadithViewer.sqlite */; };
+		377653B815391C290021C452 /* 08-chat.png in Resources */ = {isa = PBXBuildFile; fileRef = 377653B615391C290021C452 /* 08-chat.png */; };
+		377653B915391C290021C452 /* 09-chat-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 377653B715391C290021C452 /* 09-chat-2.png */; };
+		377653BD15391D020021C452 /* 40-inbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 377653BB15391D020021C452 /* 40-inbox.png */; };
+		377653BE15391D020021C452 /* 18-envelope.png in Resources */ = {isa = PBXBuildFile; fileRef = 377653BC15391D020021C452 /* 18-envelope.png */; };
+		377653C415392C520021C452 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377653C315392C510021C452 /* MessageUI.framework */; };
+		37C78F5B1530C94F00BD081D /* bgrnd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 37C78F5A1530C94F00BD081D /* bgrnd.jpg */; };
+		37C78F6415310BD500BD081D /* tabbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C78F6215310BD500BD081D /* tabbar.png */; };
+		37C78F6515310BD500BD081D /* tabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C78F6315310BD500BD081D /* tabbar@2x.png */; };
+		37C78F6F15311AFE00BD081D /* databgrnd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 37C78F6E15311AFE00BD081D /* databgrnd.jpg */; };
+		37C78F72153124A800BD081D /* arrow_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C78F70153124A800BD081D /* arrow_down.png */; };
+		37C78F73153124A800BD081D /* arrow_up.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C78F71153124A800BD081D /* arrow_up.png */; };
+		37E849251522A6B400C89CBF /* HVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E849231522A6B400C89CBF /* HVViewController.m */; };
 		37F19706151FE16D00A7249A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F19705151FE16D00A7249A /* UIKit.framework */; };
 		37F19708151FE16D00A7249A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F19707151FE16D00A7249A /* Foundation.framework */; };
 		37F1970A151FE16D00A7249A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F19709151FE16D00A7249A /* CoreGraphics.framework */; };
@@ -18,26 +34,55 @@
 		37F1971E151FE16D00A7249A /* HadithViewer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37F1971C151FE16D00A7249A /* HadithViewer.xcdatamodeld */; };
 		37F19721151FE16D00A7249A /* HVMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F19720151FE16D00A7249A /* HVMasterViewController.m */; };
 		37F19724151FE16D00A7249A /* HVDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F19723151FE16D00A7249A /* HVDetailViewController.m */; };
+		37F1972E151FEF3300A7249A /* hv_app.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F1972D151FEF3300A7249A /* hv_app.png */; };
+		37F19731151FEF5F00A7249A /* hv_app@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F19730151FEF5F00A7249A /* hv_app@2x.png */; };
+		37F19733151FF1B600A7249A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F19732151FF1B600A7249A /* Default.png */; };
+		37F19735151FF20400A7249A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F19734151FF20400A7249A /* Default@2x.png */; };
+		37F19740151FFD9E00A7249A /* Hadith.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F1973F151FFD9E00A7249A /* Hadith.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		37F19701151FE16D00A7249A /* HadithViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HadithViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3704DE14152BCDE000798372 /* HVSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVSecondViewController.h; sourceTree = "<group>"; };
+		3704DE15152BCDE000798372 /* HVSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVSecondViewController.m; sourceTree = "<group>"; };
+		372140DB153BA11200A882A4 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		372140DC153BA11200A882A4 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		37395BAA152144B2002540F2 /* HadithViewer.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = HadithViewer.sqlite; sourceTree = "<group>"; };
+		377653B615391C290021C452 /* 08-chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "08-chat.png"; sourceTree = "<group>"; };
+		377653B715391C290021C452 /* 09-chat-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "09-chat-2.png"; sourceTree = "<group>"; };
+		377653BB15391D020021C452 /* 40-inbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "40-inbox.png"; sourceTree = "<group>"; };
+		377653BC15391D020021C452 /* 18-envelope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "18-envelope.png"; sourceTree = "<group>"; };
+		377653C315392C510021C452 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		37C78F5A1530C94F00BD081D /* bgrnd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bgrnd.jpg; sourceTree = "<group>"; };
+		37C78F6215310BD500BD081D /* tabbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar.png; sourceTree = "<group>"; };
+		37C78F6315310BD500BD081D /* tabbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar@2x.png"; sourceTree = "<group>"; };
+		37C78F6E15311AFE00BD081D /* databgrnd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = databgrnd.jpg; sourceTree = "<group>"; };
+		37C78F70153124A800BD081D /* arrow_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_down.png; sourceTree = "<group>"; };
+		37C78F71153124A800BD081D /* arrow_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_up.png; sourceTree = "<group>"; };
+		37E849221522A6B400C89CBF /* HVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVViewController.h; sourceTree = "<group>"; };
+		37E849231522A6B400C89CBF /* HVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVViewController.m; sourceTree = "<group>"; };
+		37F19701151FE16D00A7249A /* Hadith Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hadith Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F19705151FE16D00A7249A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		37F19707151FE16D00A7249A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		37F19709151FE16D00A7249A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		37F1970B151FE16D00A7249A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		37F1970F151FE16D00A7249A /* HadithViewer-Info.plist */ = {isa = PBXFileReference; path = "HadithViewer-Info.plist"; sourceTree = "<group>"; };
+		37F1970F151FE16D00A7249A /* HadithViewer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HadithViewer-Info.plist"; sourceTree = "<group>"; };
 		37F19711151FE16D00A7249A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		37F19713151FE16D00A7249A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		37F19715151FE16D00A7249A /* HadithViewer-Prefix.pch */ = {isa = PBXFileReference; path = "HadithViewer-Prefix.pch"; sourceTree = "<group>"; };
-		37F19716151FE16D00A7249A /* HVAppDelegate.h */ = {isa = PBXFileReference; path = HVAppDelegate.h; sourceTree = "<group>"; };
+		37F19715151FE16D00A7249A /* HadithViewer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HadithViewer-Prefix.pch"; sourceTree = "<group>"; };
+		37F19716151FE16D00A7249A /* HVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVAppDelegate.h; sourceTree = "<group>"; };
 		37F19717151FE16D00A7249A /* HVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVAppDelegate.m; sourceTree = "<group>"; };
 		37F1971A151FE16D00A7249A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		37F1971D151FE16D00A7249A /* HadithViewer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HadithViewer.xcdatamodel; sourceTree = "<group>"; };
-		37F1971F151FE16D00A7249A /* HVMasterViewController.h */ = {isa = PBXFileReference; path = HVMasterViewController.h; sourceTree = "<group>"; };
+		37F1971F151FE16D00A7249A /* HVMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVMasterViewController.h; sourceTree = "<group>"; };
 		37F19720151FE16D00A7249A /* HVMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVMasterViewController.m; sourceTree = "<group>"; };
-		37F19722151FE16D00A7249A /* HVDetailViewController.h */ = {isa = PBXFileReference; path = HVDetailViewController.h; sourceTree = "<group>"; };
+		37F19722151FE16D00A7249A /* HVDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HVDetailViewController.h; sourceTree = "<group>"; };
 		37F19723151FE16D00A7249A /* HVDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HVDetailViewController.m; sourceTree = "<group>"; };
+		37F1972D151FEF3300A7249A /* hv_app.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hv_app.png; path = ../hv_app.png; sourceTree = "<group>"; };
+		37F19730151FEF5F00A7249A /* hv_app@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "hv_app@2x.png"; path = "../hv_app@2x.png"; sourceTree = "<group>"; };
+		37F19732151FF1B600A7249A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		37F19734151FF20400A7249A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		37F1973E151FFD9E00A7249A /* Hadith.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hadith.h; sourceTree = "<group>"; };
+		37F1973F151FFD9E00A7249A /* Hadith.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hadith.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +90,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				372140DD153BA11200A882A4 /* AddressBook.framework in Frameworks */,
+				372140DE153BA11200A882A4 /* AddressBookUI.framework in Frameworks */,
+				377653C415392C520021C452 /* MessageUI.framework in Frameworks */,
 				37F19706151FE16D00A7249A /* UIKit.framework in Frameworks */,
 				37F19708151FE16D00A7249A /* Foundation.framework in Frameworks */,
 				37F1970A151FE16D00A7249A /* CoreGraphics.framework in Frameworks */,
@@ -55,6 +103,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37E8491A1522840D00C89CBF /* Dataaccess */ = {
+			isa = PBXGroup;
+			children = (
+				37395BAA152144B2002540F2 /* HadithViewer.sqlite */,
+				37F1973E151FFD9E00A7249A /* Hadith.h */,
+				37F1973F151FFD9E00A7249A /* Hadith.m */,
+			);
+			name = Dataaccess;
+			sourceTree = "<group>";
+		};
 		37F196F6151FE16D00A7249A = {
 			isa = PBXGroup;
 			children = (
@@ -67,7 +125,7 @@
 		37F19702151FE16D00A7249A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				37F19701151FE16D00A7249A /* HadithViewer.app */,
+				37F19701151FE16D00A7249A /* Hadith Viewer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +133,9 @@
 		37F19704151FE16D00A7249A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				372140DB153BA11200A882A4 /* AddressBook.framework */,
+				372140DC153BA11200A882A4 /* AddressBookUI.framework */,
+				377653C315392C510021C452 /* MessageUI.framework */,
 				37F19705151FE16D00A7249A /* UIKit.framework */,
 				37F19707151FE16D00A7249A /* Foundation.framework */,
 				37F19709151FE16D00A7249A /* CoreGraphics.framework */,
@@ -87,13 +148,19 @@
 			isa = PBXGroup;
 			children = (
 				37F19716151FE16D00A7249A /* HVAppDelegate.h */,
-				37F19717151FE16D00A7249A /* HVAppDelegate.m */,
-				37F19719151FE16D00A7249A /* MainStoryboard.storyboard */,
-				37F1971F151FE16D00A7249A /* HVMasterViewController.h */,
-				37F19720151FE16D00A7249A /* HVMasterViewController.m */,
 				37F19722151FE16D00A7249A /* HVDetailViewController.h */,
+				37F1971F151FE16D00A7249A /* HVMasterViewController.h */,
+				3704DE14152BCDE000798372 /* HVSecondViewController.h */,
+				37E849221522A6B400C89CBF /* HVViewController.h */,
+				37F19717151FE16D00A7249A /* HVAppDelegate.m */,
 				37F19723151FE16D00A7249A /* HVDetailViewController.m */,
+				37F19720151FE16D00A7249A /* HVMasterViewController.m */,
+				3704DE15152BCDE000798372 /* HVSecondViewController.m */,
+				37E849231522A6B400C89CBF /* HVViewController.m */,
+				37E8491A1522840D00C89CBF /* Dataaccess */,
 				37F1971C151FE16D00A7249A /* HadithViewer.xcdatamodeld */,
+				37F19719151FE16D00A7249A /* MainStoryboard.storyboard */,
+				37F1972F151FEF3C00A7249A /* Resources */,
 				37F1970E151FE16D00A7249A /* Supporting Files */,
 			);
 			path = HadithViewer;
@@ -110,12 +177,33 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		37F1972F151FEF3C00A7249A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				377653BB15391D020021C452 /* 40-inbox.png */,
+				377653BC15391D020021C452 /* 18-envelope.png */,
+				377653B615391C290021C452 /* 08-chat.png */,
+				377653B715391C290021C452 /* 09-chat-2.png */,
+				37C78F70153124A800BD081D /* arrow_down.png */,
+				37C78F71153124A800BD081D /* arrow_up.png */,
+				37C78F6E15311AFE00BD081D /* databgrnd.jpg */,
+				37C78F6215310BD500BD081D /* tabbar.png */,
+				37C78F6315310BD500BD081D /* tabbar@2x.png */,
+				37C78F5A1530C94F00BD081D /* bgrnd.jpg */,
+				37F19734151FF20400A7249A /* Default@2x.png */,
+				37F19732151FF1B600A7249A /* Default.png */,
+				37F19730151FEF5F00A7249A /* hv_app@2x.png */,
+				37F1972D151FEF3300A7249A /* hv_app.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		37F19700151FE16D00A7249A /* HadithViewer */ = {
+		37F19700151FE16D00A7249A /* Hadith Viewer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 37F19727151FE16D00A7249A /* Build configuration list for PBXNativeTarget "HadithViewer" */;
+			buildConfigurationList = 37F19727151FE16D00A7249A /* Build configuration list for PBXNativeTarget "Hadith Viewer" */;
 			buildPhases = (
 				37F196FD151FE16D00A7249A /* Sources */,
 				37F196FE151FE16D00A7249A /* Frameworks */,
@@ -125,9 +213,9 @@
 			);
 			dependencies = (
 			);
-			name = HadithViewer;
+			name = "Hadith Viewer";
 			productName = HadithViewer;
-			productReference = 37F19701151FE16D00A7249A /* HadithViewer.app */;
+			productReference = 37F19701151FE16D00A7249A /* Hadith Viewer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -152,7 +240,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				37F19700151FE16D00A7249A /* HadithViewer */,
+				37F19700151FE16D00A7249A /* Hadith Viewer */,
 			);
 		};
 /* End PBXProject section */
@@ -164,6 +252,21 @@
 			files = (
 				37F19712151FE16D00A7249A /* InfoPlist.strings in Resources */,
 				37F1971B151FE16D00A7249A /* MainStoryboard.storyboard in Resources */,
+				37F1972E151FEF3300A7249A /* hv_app.png in Resources */,
+				37F19731151FEF5F00A7249A /* hv_app@2x.png in Resources */,
+				37F19733151FF1B600A7249A /* Default.png in Resources */,
+				37F19735151FF20400A7249A /* Default@2x.png in Resources */,
+				37395BAB152144B2002540F2 /* HadithViewer.sqlite in Resources */,
+				37C78F5B1530C94F00BD081D /* bgrnd.jpg in Resources */,
+				37C78F6415310BD500BD081D /* tabbar.png in Resources */,
+				37C78F6515310BD500BD081D /* tabbar@2x.png in Resources */,
+				37C78F6F15311AFE00BD081D /* databgrnd.jpg in Resources */,
+				37C78F72153124A800BD081D /* arrow_down.png in Resources */,
+				37C78F73153124A800BD081D /* arrow_up.png in Resources */,
+				377653B815391C290021C452 /* 08-chat.png in Resources */,
+				377653B915391C290021C452 /* 09-chat-2.png in Resources */,
+				377653BD15391D020021C452 /* 40-inbox.png in Resources */,
+				377653BE15391D020021C452 /* 18-envelope.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +282,9 @@
 				37F1971E151FE16D00A7249A /* HadithViewer.xcdatamodeld in Sources */,
 				37F19721151FE16D00A7249A /* HVMasterViewController.m in Sources */,
 				37F19724151FE16D00A7249A /* HVDetailViewController.m in Sources */,
+				37F19740151FFD9E00A7249A /* Hadith.m in Sources */,
+				37E849251522A6B400C89CBF /* HVViewController.m in Sources */,
+				3704DE16152BCDE000798372 /* HVSecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,13 +389,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		37F19727151FE16D00A7249A /* Build configuration list for PBXNativeTarget "HadithViewer" */ = {
+		37F19727151FE16D00A7249A /* Build configuration list for PBXNativeTarget "Hadith Viewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				37F19728151FE16D00A7249A /* Debug */,
 				37F19729151FE16D00A7249A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
