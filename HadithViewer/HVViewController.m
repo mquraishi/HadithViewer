@@ -42,7 +42,15 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"viewByBook"]) {
+    if ([[segue identifier] isEqualToString:@"viewByV1"] || 
+        [[segue identifier] isEqualToString:@"viewByV2"] || 
+        [[segue identifier] isEqualToString:@"viewByV3"] || 
+        [[segue identifier] isEqualToString:@"viewByV4"] || 
+        [[segue identifier] isEqualToString:@"viewByV5"] || 
+        [[segue identifier] isEqualToString:@"viewByV6"] || 
+        [[segue identifier] isEqualToString:@"viewByV7"] || 
+        [[segue identifier] isEqualToString:@"viewByV8"] || 
+        [[segue identifier] isEqualToString:@"viewByV9"]) {
         NSMutableDictionary * names = [Hadith bookNames:self.volumeNumber inManagedObjectContext:self.managedObjectContext];
         [[segue destinationViewController] setBookNames:names];
         [[segue destinationViewController] setManagedObjectContext:self.managedObjectContext];

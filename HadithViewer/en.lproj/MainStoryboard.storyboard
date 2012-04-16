@@ -58,7 +58,7 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonViewByBook:" destination="dBq-CQ-m0C" eventType="touchUpInside" id="VXZ-NF-Qdh"/>
-                                    <segue destination="12" kind="push" identifier="viewByBook" id="Lf1-mm-DwG"/>
+                                    <segue destination="12" kind="push" identifier="viewByV1" id="Lf1-mm-DwG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.60000000000000009" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Fwq-dR-S5c">
@@ -75,7 +75,7 @@
                                 </state>
                                 <connections>
                                     <action selector="buttonViewByBook:" destination="dBq-CQ-m0C" eventType="touchUpInside" id="KER-bq-MxK"/>
-                                    <segue destination="12" kind="push" identifier="viewByBook" id="trB-jL-PVt"/>
+                                    <segue destination="12" kind="push" identifier="viewByV2" id="trB-jL-PVt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.60000000000000009" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NHo-zv-2gL">
@@ -91,7 +91,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="12" kind="push" identifier="viewByBook" id="KfK-li-Xbu"/>
+                                    <segue destination="12" kind="push" identifier="viewByV3" id="KfK-li-Xbu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.60000000000000009" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ySr-kC-mnK">
@@ -107,10 +107,10 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="12" kind="push" identifier="viewByBook" id="HE2-EC-s3q"/>
+                                    <segue destination="12" kind="push" identifier="viewByV4" id="HE2-EC-s3q"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.60000000000000009" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0KL-Vm-Dd8">
+                            <button opaque="NO" alpha="0.60000000000000009" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0KL-Vm-Dd8">
                                 <rect key="frame" x="60" y="216.5" width="184" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
@@ -123,10 +123,10 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="12" kind="push" identifier="viewByBook" id="pUO-83-oFu"/>
+                                    <segue destination="12" kind="push" identifier="viewByV5" id="pUO-83-oFu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.60000000000000009" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bna-Mt-j09">
+                            <button opaque="NO" alpha="0.60000000000000009" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bna-Mt-j09">
                                 <rect key="frame" x="60" y="246.5" width="184" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
@@ -139,10 +139,10 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="12" kind="push" identifier="viewByBook" id="FIr-yN-WpK"/>
+                                    <segue destination="12" kind="push" identifier="viewByV6" id="FIr-yN-WpK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.60000000000000009" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nfc-Nh-sIX">
+                            <button opaque="NO" alpha="0.60000000000000009" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nfc-Nh-sIX">
                                 <rect key="frame" x="60.5" y="276.5" width="184" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
@@ -155,10 +155,10 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="12" kind="push" identifier="viewByBook" id="Xu8-nJ-fbl"/>
+                                    <segue destination="12" kind="push" identifier="viewByV7" id="Xu8-nJ-fbl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.60000000000000009" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2Ku-Ha-BvJ">
+                            <button opaque="NO" alpha="0.60000000000000009" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2Ku-Ha-BvJ">
                                 <rect key="frame" x="60" y="306.5" width="184" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
@@ -171,10 +171,10 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="12" kind="push" identifier="viewByBook" id="0RC-wi-7J9"/>
+                                    <segue destination="12" kind="push" identifier="viewByV8" id="0RC-wi-7J9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.60000000000000009" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Z8E-xR-2q1">
+                            <button opaque="NO" alpha="0.60000000000000009" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Z8E-xR-2q1">
                                 <rect key="frame" x="60.5" y="336.5" width="184" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
@@ -187,7 +187,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="12" kind="push" identifier="viewByBook" id="v85-UJ-lbQ"/>
+                                    <segue destination="12" kind="push" identifier="viewByV9" id="v85-UJ-lbQ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -370,11 +370,11 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" id="3xo-gp-PYK">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="410"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Relevant Hadith Data Not Found." id="GRx-eo-P31">
-                                        <rect key="frame" x="7" y="1" width="298" height="409"/>
+                                        <rect key="frame" x="7" y="1" width="298" height="361"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <gestureRecognizers/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -383,6 +383,15 @@
                                     </textView>
                                 </subviews>
                             </scrollView>
+                            <tabBar contentMode="scaleToFill" id="06N-Il-Tsb">
+                                <rect key="frame" x="0.0" y="367" width="320" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="Send Email" image="18-envelope.png" id="5j5-xw-MKA"/>
+                                    <tabBarItem title="Send Text" image="08-chat.png" id="JhK-u6-bFp"/>
+                                </items>
+                            </tabBar>
                         </subviews>
                         <gestureRecognizers/>
                     </view>
@@ -394,18 +403,24 @@
                     <connections>
                         <outlet property="detailDescription" destination="3xo-gp-PYK" id="hOi-ZH-V4i"/>
                         <outlet property="detailDescriptionLabel" destination="GRx-eo-P31" id="LbS-RC-9NR"/>
+                        <outlet property="sendHadith" destination="06N-Il-Tsb" id="qN8-PQ-mwv"/>
                     </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1379" y="-650"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="08-chat.png" width="24" height="22"/>
+        <image name="18-envelope.png" width="24" height="16"/>
+    </resources>
     <classes>
         <class className="HVDetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/HVDetailViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="detailDescription" candidateClass="UIScrollView"/>
                 <relationship kind="outlet" name="detailDescriptionLabel" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="sendHadith" candidateClass="UITabBar"/>
             </relationships>
         </class>
         <class className="HVMasterViewController" superclassName="UITableViewController">

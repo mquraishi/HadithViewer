@@ -34,6 +34,8 @@
     UIImage* tabBarBackground = [UIImage imageNamed:@"tabbar.png"];
     [controller.navigationController.navigationBar setBackgroundImage:tabBarBackground forBarMetrics:UIBarMetricsDefault];
     
+    //[[UITabBar appearance] setBackgroundImage:tabBarBackground];
+
     return YES;
 }
 							
