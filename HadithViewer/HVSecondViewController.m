@@ -15,7 +15,7 @@
 @synthesize detail = _detail;
 @synthesize displayVolume = _displayVolume;
 @synthesize displayBook = _displayBook;
-@synthesize managedObjectContext = _managedObjectContext;
+@synthesize managedObjectContext;
 
 #pragma mark - Managing the second level detail
 
@@ -37,8 +37,12 @@
 	// Do any additional setup after loading the view, typically from a nib.
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleDone target:nil action:nil];
     self.navigationItem.backBarButtonItem = backButton;
-    [self.navigationItem setTitle:[NSString stringWithFormat:@"Volume %d - Book %d", _displayVolume, _displayBook]];
+    [self.navigationItem setTitle:[NSString stringWithFormat:@"Volume %d - Book %d", self.displayVolume, self.displayBook]];
     backButton.tintColor = [UIColor blackColor];
+    UIImage *pattern = [UIImage imageNamed:@"bgrnd.jpg"];
+    
+    // Set the image as a background pattern
+    [[self view] setBackgroundColor:[UIColor colorWithPatternImage:pattern]];
 }
 
 - (void)viewDidUnload
@@ -69,7 +73,8 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     Hadith *hData = [[self detail] objectAtIndex:indexPath.row];
-    cell.textLabel.text = [NSString stringWithFormat:@"Hadith #%d Narrated by\n%@:",hData.number.intValue, hData.narrated];
+    cell.textLabel.text = [NSString stringWithFormat:@"Hadith #%d",hData.number.intValue];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"Narrated by %@",hData.narrated];
     cell.textLabel.tag = hData.number.integerValue;
     return cell;
 }

@@ -15,11 +15,11 @@
 
 @implementation HVDetailViewController
 @synthesize sendHadith;
-@synthesize detail = _detail;
-@synthesize detailDescription = _detailDescription;
-@synthesize detailDescriptionLabel = _detailDescriptionLabel;
-@synthesize hBookNumber = _hBookNumber;
-@synthesize hNumber = _hNumber;
+@synthesize detail;
+@synthesize detailDescription;
+@synthesize detailDescriptionLabel;
+@synthesize hBookNumber;
+@synthesize hNumber;
 @synthesize firstName, lastName, email, phoneNumber, peoplePicker, smsSelected, emailSelected;
 
 void (^showAlertWithTitlesAndMsg)(id, NSString *, NSString *, NSString *) = ^(id obj, NSString *title, NSString *message, NSString *buttonTitle) 
@@ -37,8 +37,8 @@ void (^showAlertWithTitlesAndMsg)(id, NSString *, NSString *, NSString *) = ^(id
 
 - (void)setDetailItem:(id)newDetailItem
 {
-    if (_detail != newDetailItem) {
-        _detail = newDetailItem;
+    if (detail != newDetailItem) {
+        detail = newDetailItem;
         
         // Update the view.
         [self configureView];
@@ -101,13 +101,15 @@ void (^showAlertWithTitlesAndMsg)(id, NSString *, NSString *, NSString *) = ^(id
     [downArrow setFrame:CGRectMake(305, 350, 18, 18)];
     self.detailDescriptionLabel.delegate=self;
     
-    [self.navigationItem setTitle:[NSString stringWithFormat:@"Book %d - Hadith #%d", _hBookNumber, _hNumber]];
+    [self.navigationItem setTitle:[NSString stringWithFormat:@"Book %d - Hadith #%d", hBookNumber, hNumber]];
     
-    UIImage *pattern = [UIImage imageNamed:@"databgrnd.jpg"];
+    //UIImage *pattern = [UIImage imageNamed:@"databgrnd.jpg"];
+    UIImage *pattern = [UIImage imageNamed:@"bgrnd.jpg"];
+
     
     // Set the image as a background pattern
     [[self view] setBackgroundColor:[UIColor colorWithPatternImage:pattern]];
-    
+        
     // Do any additional setup after loading the view, typically from a nib.
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleDone target:nil action:nil];
     self.navigationItem.backBarButtonItem = backButton;
@@ -162,17 +164,25 @@ void (^showAlertWithTitlesAndMsg)(id, NSString *, NSString *, NSString *) = ^(id
 // The application only shows the phone, email, and birthdate information of the selected contact.
 -(void)showPeoplePickerController
 {
-	ABPeoplePickerNavigationController *picker = [[ABPeoplePickerNavigationController alloc] init];
-    picker.peoplePickerDelegate = self;
+    self.peoplePicker = [[ABPeoplePickerNavigationController alloc] init];
+    self.peoplePicker.peoplePickerDelegate = self;
 	// Display only a person's phone, email.
 	NSArray *displayedItems = [NSArray arrayWithObjects:[NSNumber numberWithInt:kABPersonPhoneProperty], 
                                [NSNumber numberWithInt:kABPersonEmailProperty], nil];
 	
 	
-	picker.displayedProperties = displayedItems;
-    
-    self.peoplePicker = picker;
+	self.peoplePicker.displayedProperties = displayedItems;
 }
+
+//- (void)dealloc
+//{
+//    self.peoplePicker = nil;
+//    self.detail = nil;
+//    self.firstName = nil;
+//    self.lastName = nil;
+//    self.email = nil;
+//    self.phoneNumber = nil;
+//}
 
 #pragma mark ABPeoplePickerNavigationControllerDelegate methods
 // Displays the information of a selected person
@@ -203,17 +213,23 @@ void (^showAlertWithTitlesAndMsg)(id, NSString *, NSString *, NSString *) = ^(id
     if (property == kABPersonEmailProperty) {
         ABMultiValueRef emails = ABRecordCopyValue(person, kABPersonEmailProperty);
         if (ABMultiValueGetCount(emails) > 0) {
-            self.email = (__bridge NSString *)ABMultiValueCopyValueAtIndex(emails, identifier);
+            CFTypeRef copyValue = ABMultiValueCopyValueAtIndex(emails, identifier);
+            self.email = (__bridge NSString *)copyValue;
+            CFRelease(copyValue);
         } else {
             self.email = @""; 
         }
+        CFRelease(emails);
     } else if (property == kABPersonPhoneProperty) {
         ABMultiValueRef pnums = ABRecordCopyValue(person, kABPersonPhoneProperty);
         if (ABMultiValueGetCount(pnums) > 0) {
-            self.phoneNumber = (__bridge NSString *)ABMultiValueCopyValueAtIndex(pnums, identifier);
+            CFTypeRef copyValue = ABMultiValueCopyValueAtIndex(pnums, identifier);
+            self.phoneNumber = (__bridge NSString *)copyValue;
+            CFRelease(copyValue);
         } else {
             self.phoneNumber = @"";
         }
+        CFRelease(pnums);
     }
     if (self.emailSelected) {
         [self showEmailModalView];
@@ -235,7 +251,7 @@ void (^showAlertWithTitlesAndMsg)(id, NSString *, NSString *, NSString *) = ^(id
 #pragma Email and SMS modal code
 //
 //
--(void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
+-  (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
     // Detect which item was clicked.  
     if ([[item title] isEqualToString:@"Send Email"]) {
         [self showPeoplePickerController];
@@ -251,7 +267,6 @@ void (^showAlertWithTitlesAndMsg)(id, NSString *, NSString *, NSString *) = ^(id
         [self presentModalViewController:self.peoplePicker animated:YES];
     }
 }
-
 
 - (void)showEmailModalView {
     if ([MFMailComposeViewController canSendMail]) {

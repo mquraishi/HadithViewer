@@ -12,7 +12,7 @@
 
 @implementation HVMasterViewController
 
-@synthesize managedObjectContext = __managedObjectContext;
+@synthesize managedObjectContext;
 @synthesize bookNames = _bookNames;
 
 - (void)awakeFromNib
@@ -27,6 +27,12 @@
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleDone target:nil action:nil];
     self.navigationItem.backBarButtonItem = backButton;
     backButton.tintColor = [UIColor blackColor];
+    
+    UIImage *pattern = [UIImage imageNamed:@"bgrnd.jpg"];
+    
+    // Set the image as a background pattern
+    [[self view] setBackgroundColor:[UIColor colorWithPatternImage:pattern]];
+    
     sortedKeys = [Hadith returnSortedArrayOfKeys:self.bookNames];
 }
 

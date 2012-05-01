@@ -15,10 +15,10 @@
 @end
 
 @implementation HVViewController
-@synthesize fetchedResultsController = __fetchedResultsController;
-@synthesize managedObjectContext = __managedObjectContext;
-@synthesize bookNames = _bookNames;
-@synthesize volumeNumber = _volumeNumber;
+@synthesize fetchedResultsController;
+@synthesize managedObjectContext;
+@synthesize bookNames;
+@synthesize volumeNumber;
 
 
 -(id)init
@@ -60,6 +60,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    UIImage *pattern = [UIImage imageNamed:@"bgrnd.jpg"];
+    
+    // Set the image as a background pattern
+    [[self view] setBackgroundColor:[UIColor colorWithPatternImage:pattern]];
     // Do any additional setup after loading the view from its nib.
 }
 
