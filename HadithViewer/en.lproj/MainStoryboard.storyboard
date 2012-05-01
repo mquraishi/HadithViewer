@@ -11,9 +11,15 @@
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
                 <navigationController modalTransitionStyle="flipHorizontal" id="3" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="4">
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="blackOpaque" id="4">
                         <autoresizingMask key="autoresizingMask"/>
+                        <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="kzg-m6-yaa">
+                        <rect key="frame" x="0.0" y="416" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="dBq-CQ-m0C" kind="relationship" relationship="rootViewController" id="EzF-c8-QOH"/>
                     </connections>
@@ -79,7 +85,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.60000000000000009" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NHo-zv-2gL">
-                                <rect key="frame" x="60.5" y="156.5" width="184" height="22"/>
+                                <rect key="frame" x="60" y="156" width="184" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
                                 <color key="tintColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -91,11 +97,12 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="buttonViewByBook:" destination="dBq-CQ-m0C" eventType="touchUpInside" id="1hf-re-2vY"/>
                                     <segue destination="12" kind="push" identifier="viewByV3" id="KfK-li-Xbu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.60000000000000009" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ySr-kC-mnK">
-                                <rect key="frame" x="60" y="186.5" width="184" height="22"/>
+                                <rect key="frame" x="60" y="186" width="184" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
                                 <color key="tintColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -107,11 +114,12 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="buttonViewByBook:" destination="dBq-CQ-m0C" eventType="touchUpInside" id="bO8-LV-cKt"/>
                                     <segue destination="12" kind="push" identifier="viewByV4" id="HE2-EC-s3q"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.60000000000000009" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0KL-Vm-Dd8">
-                                <rect key="frame" x="60" y="216.5" width="184" height="22"/>
+                                <rect key="frame" x="60" y="216" width="184" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
                                 <color key="tintColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -123,11 +131,12 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="buttonViewByBook:" destination="dBq-CQ-m0C" eventType="touchUpInside" id="A6A-zA-O8c"/>
                                     <segue destination="12" kind="push" identifier="viewByV5" id="pUO-83-oFu"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.60000000000000009" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bna-Mt-j09">
-                                <rect key="frame" x="60" y="246.5" width="184" height="22"/>
+                                <rect key="frame" x="60" y="246" width="184" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
                                 <color key="tintColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -139,11 +148,12 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="buttonViewByBook:" destination="dBq-CQ-m0C" eventType="touchUpInside" id="62V-Mw-rDd"/>
                                     <segue destination="12" kind="push" identifier="viewByV6" id="FIr-yN-WpK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.60000000000000009" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nfc-Nh-sIX">
-                                <rect key="frame" x="60.5" y="276.5" width="184" height="22"/>
+                                <rect key="frame" x="60" y="276" width="184" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
                                 <color key="tintColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -155,11 +165,12 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="buttonViewByBook:" destination="dBq-CQ-m0C" eventType="touchUpInside" id="IKe-Xj-qzQ"/>
                                     <segue destination="12" kind="push" identifier="viewByV7" id="Xu8-nJ-fbl"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.60000000000000009" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2Ku-Ha-BvJ">
-                                <rect key="frame" x="60" y="306.5" width="184" height="22"/>
+                                <rect key="frame" x="60" y="306" width="184" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
                                 <color key="tintColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -171,11 +182,12 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="buttonViewByBook:" destination="dBq-CQ-m0C" eventType="touchUpInside" id="MRj-5f-eva"/>
                                     <segue destination="12" kind="push" identifier="viewByV8" id="0RC-wi-7J9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.60000000000000009" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Z8E-xR-2q1">
-                                <rect key="frame" x="60.5" y="336.5" width="184" height="22"/>
+                                <rect key="frame" x="60" y="336" width="184" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="15"/>
                                 <color key="tintColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -187,6 +199,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="buttonViewByBook:" destination="dBq-CQ-m0C" eventType="touchUpInside" id="lN1-qa-xDV"/>
                                     <segue destination="12" kind="push" identifier="viewByV9" id="v85-UJ-lbQ"/>
                                 </connections>
                             </button>
@@ -194,7 +207,7 @@
                         <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Hadith Viewer" id="xTC-ik-JzS">
-                        <barButtonItem key="backBarButtonItem" title="Back" style="plain" id="9qO-TC-Fay">
+                        <barButtonItem key="backBarButtonItem" style="plain" systemItem="flexibleSpace" id="9qO-TC-Fay">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="eGC-wH-JWs">
@@ -210,7 +223,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="4TO-Ar-A3W" kind="push" id="IqF-ut-vyd"/>
+                                    <segue destination="4TO-Ar-A3W" kind="modal" identifier="About" modalTransitionStyle="flipHorizontal" id="GIM-aT-RpU"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -219,27 +232,28 @@
             </objects>
             <point key="canvasLocation" x="-26" y="-656"/>
         </scene>
-        <!--View Controller - About-->
+        <!--About View Controller - About-->
         <scene sceneID="g2B-BD-gmV">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Id-32-JGH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController title="About" id="4TO-Ar-A3W" sceneMemberID="viewController">
+                <viewController title="About" modalTransitionStyle="flipHorizontal" id="4TO-Ar-A3W" customClass="HVAboutViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HVV-Uu-5lK">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Sahih Bukhari Viewer" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" minimumFontSize="10" id="dFE-xN-afv">
-                                <rect key="frame" x="58" y="35" width="242" height="42"/>
+                                <rect key="frame" x="58" y="46" width="242" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="q3f-bT-N2s">
                                 <rect key="frame" x="47" y="134" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                <string key="text">Contains all 9 volumes and books and the Ahadith.  I will add more features as time permits, including the ability to search for hadith.</string>
+                                <string key="text">Contains all 9 volumes and books and the Ahadith.  I will add more features as time permits, including the ability to search for hadith and the ability to post to facebook.</string>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -247,20 +261,34 @@
                                 <rect key="frame" x="206" y="362" width="94" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="v 1.0" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" minimumFontSize="10" id="vM8-6o-rBB">
-                                <rect key="frame" x="134" y="55" width="91" height="42"/>
+                                <rect key="frame" x="134" y="66" width="91" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="20"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" id="tC7-0U-czF">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <navigationItem title="About" id="2Ob-Yz-MIU">
+                                        <barButtonItem key="leftBarButtonItem" title="Dismiss" id="D6e-nr-mW4">
+                                            <connections>
+                                                <action selector="dismissAboutView:" destination="4TO-Ar-A3W" id="oIq-tX-cXG"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="About" id="4ql-ko-B6I"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="109" y="-1306"/>
@@ -269,7 +297,7 @@
         <scene sceneID="18">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="17" sceneMemberID="firstResponder"/>
-                <tableViewController storyboardIdentifier="" title="Master" modalTransitionStyle="crossDissolve" id="12" customClass="HVMasterViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="" title="Master" modalTransitionStyle="flipHorizontal" id="12" customClass="HVMasterViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="54" sectionHeaderHeight="22" sectionFooterHeight="22" id="13">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -317,23 +345,30 @@
         <scene sceneID="bga-wC-8b0">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EQc-TI-mF8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController title="Second" id="g0m-37-qtR" customClass="HVSecondViewController" sceneMemberID="viewController">
+                <tableViewController title="Second" modalTransitionStyle="flipHorizontal" id="g0m-37-qtR" customClass="HVSecondViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="73" sectionHeaderHeight="22" sectionFooterHeight="22" id="J7u-4C-hMf">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleAspectFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="lPi-iw-bpJ" rowHeight="73" style="IBUITableViewCellStyleDefault" id="xQn-8v-FYH">
+                            <tableViewCell contentMode="scaleAspectFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="lPi-iw-bpJ" detailTextLabel="CUV-RF-lDT" rowHeight="73" style="IBUITableViewCellStyleSubtitle" id="xQn-8v-FYH">
                                 <rect key="frame" x="0.0" y="22" width="320" height="73"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="300" height="72"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" id="lPi-iw-bpJ">
-                                            <rect key="frame" x="10" y="0.0" width="280" height="72"/>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" id="lPi-iw-bpJ">
+                                            <rect key="frame" x="10" y="17" width="52" height="21"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="16"/>
+                                            <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="17"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" id="CUV-RF-lDT">
+                                            <rect key="frame" x="10" y="38" width="68" height="17"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="14"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
@@ -364,7 +399,7 @@
         <scene sceneID="24">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="23" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="" title="Detail" modalTransitionStyle="crossDissolve" id="21" customClass="HVDetailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="" title="Detail" modalTransitionStyle="flipHorizontal" id="21" customClass="HVDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="22">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -377,7 +412,7 @@
                                         <rect key="frame" x="7" y="1" width="298" height="361"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <gestureRecognizers/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="19"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -415,6 +450,12 @@
         <image name="18-envelope.png" width="24" height="16"/>
     </resources>
     <classes>
+        <class className="HVAboutViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/HVAboutViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="dismissAboutView:" candidateClass="UIBarButtonItem"/>
+            </relationships>
+        </class>
         <class className="HVDetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/HVDetailViewController.h"/>
             <relationships>

@@ -10,12 +10,12 @@
 		3704DE16152BCDE000798372 /* HVSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3704DE15152BCDE000798372 /* HVSecondViewController.m */; };
 		372140DD153BA11200A882A4 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372140DB153BA11200A882A4 /* AddressBook.framework */; };
 		372140DE153BA11200A882A4 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372140DC153BA11200A882A4 /* AddressBookUI.framework */; };
-		37395BAB152144B2002540F2 /* HadithViewer.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 37395BAA152144B2002540F2 /* HadithViewer.sqlite */; };
 		377653B815391C290021C452 /* 08-chat.png in Resources */ = {isa = PBXBuildFile; fileRef = 377653B615391C290021C452 /* 08-chat.png */; };
 		377653B915391C290021C452 /* 09-chat-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 377653B715391C290021C452 /* 09-chat-2.png */; };
 		377653BD15391D020021C452 /* 40-inbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 377653BB15391D020021C452 /* 40-inbox.png */; };
 		377653BE15391D020021C452 /* 18-envelope.png in Resources */ = {isa = PBXBuildFile; fileRef = 377653BC15391D020021C452 /* 18-envelope.png */; };
 		377653C415392C520021C452 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377653C315392C510021C452 /* MessageUI.framework */; };
+		37B01C76154E2E27001F2F54 /* HadithViewer.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 37B01C75154E2E27001F2F54 /* HadithViewer.sqlite */; };
 		37C78F5B1530C94F00BD081D /* bgrnd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 37C78F5A1530C94F00BD081D /* bgrnd.jpg */; };
 		37C78F6415310BD500BD081D /* tabbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C78F6215310BD500BD081D /* tabbar.png */; };
 		37C78F6515310BD500BD081D /* tabbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C78F6315310BD500BD081D /* tabbar@2x.png */; };
@@ -39,6 +39,7 @@
 		37F19733151FF1B600A7249A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F19732151FF1B600A7249A /* Default.png */; };
 		37F19735151FF20400A7249A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F19734151FF20400A7249A /* Default@2x.png */; };
 		37F19740151FFD9E00A7249A /* Hadith.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F1973F151FFD9E00A7249A /* Hadith.m */; };
+		B53C1592154A45CB00C92B16 /* HVAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B53C1591154A45CB00C92B16 /* HVAboutViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,12 +47,12 @@
 		3704DE15152BCDE000798372 /* HVSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVSecondViewController.m; sourceTree = "<group>"; };
 		372140DB153BA11200A882A4 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		372140DC153BA11200A882A4 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
-		37395BAA152144B2002540F2 /* HadithViewer.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = HadithViewer.sqlite; sourceTree = "<group>"; };
 		377653B615391C290021C452 /* 08-chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "08-chat.png"; sourceTree = "<group>"; };
 		377653B715391C290021C452 /* 09-chat-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "09-chat-2.png"; sourceTree = "<group>"; };
 		377653BB15391D020021C452 /* 40-inbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "40-inbox.png"; sourceTree = "<group>"; };
 		377653BC15391D020021C452 /* 18-envelope.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "18-envelope.png"; sourceTree = "<group>"; };
 		377653C315392C510021C452 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		37B01C75154E2E27001F2F54 /* HadithViewer.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = HadithViewer.sqlite; sourceTree = "<group>"; };
 		37C78F5A1530C94F00BD081D /* bgrnd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bgrnd.jpg; sourceTree = "<group>"; };
 		37C78F6215310BD500BD081D /* tabbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar.png; sourceTree = "<group>"; };
 		37C78F6315310BD500BD081D /* tabbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar@2x.png"; sourceTree = "<group>"; };
@@ -83,6 +84,8 @@
 		37F19734151FF20400A7249A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		37F1973E151FFD9E00A7249A /* Hadith.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hadith.h; sourceTree = "<group>"; };
 		37F1973F151FFD9E00A7249A /* Hadith.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hadith.m; sourceTree = "<group>"; };
+		B53C1590154A45CB00C92B16 /* HVAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVAboutViewController.h; sourceTree = "<group>"; };
+		B53C1591154A45CB00C92B16 /* HVAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVAboutViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,9 +109,10 @@
 		37E8491A1522840D00C89CBF /* Dataaccess */ = {
 			isa = PBXGroup;
 			children = (
-				37395BAA152144B2002540F2 /* HadithViewer.sqlite */,
+				37B01C75154E2E27001F2F54 /* HadithViewer.sqlite */,
 				37F1973E151FFD9E00A7249A /* Hadith.h */,
 				37F1973F151FFD9E00A7249A /* Hadith.m */,
+				37F1971C151FE16D00A7249A /* HadithViewer.xcdatamodeld */,
 			);
 			name = Dataaccess;
 			sourceTree = "<group>";
@@ -116,8 +120,8 @@
 		37F196F6151FE16D00A7249A = {
 			isa = PBXGroup;
 			children = (
-				37F1970D151FE16D00A7249A /* HadithViewer */,
 				37F19704151FE16D00A7249A /* Frameworks */,
+				37F1970D151FE16D00A7249A /* HadithViewer */,
 				37F19702151FE16D00A7249A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -147,18 +151,19 @@
 		37F1970D151FE16D00A7249A /* HadithViewer */ = {
 			isa = PBXGroup;
 			children = (
-				37F19716151FE16D00A7249A /* HVAppDelegate.h */,
-				37F19722151FE16D00A7249A /* HVDetailViewController.h */,
-				37F1971F151FE16D00A7249A /* HVMasterViewController.h */,
-				3704DE14152BCDE000798372 /* HVSecondViewController.h */,
-				37E849221522A6B400C89CBF /* HVViewController.h */,
-				37F19717151FE16D00A7249A /* HVAppDelegate.m */,
-				37F19723151FE16D00A7249A /* HVDetailViewController.m */,
-				37F19720151FE16D00A7249A /* HVMasterViewController.m */,
-				3704DE15152BCDE000798372 /* HVSecondViewController.m */,
-				37E849231522A6B400C89CBF /* HVViewController.m */,
 				37E8491A1522840D00C89CBF /* Dataaccess */,
-				37F1971C151FE16D00A7249A /* HadithViewer.xcdatamodeld */,
+				B53C1590154A45CB00C92B16 /* HVAboutViewController.h */,
+				B53C1591154A45CB00C92B16 /* HVAboutViewController.m */,
+				37F19716151FE16D00A7249A /* HVAppDelegate.h */,
+				37F19717151FE16D00A7249A /* HVAppDelegate.m */,
+				37F19722151FE16D00A7249A /* HVDetailViewController.h */,
+				37F19723151FE16D00A7249A /* HVDetailViewController.m */,
+				37F1971F151FE16D00A7249A /* HVMasterViewController.h */,
+				37F19720151FE16D00A7249A /* HVMasterViewController.m */,
+				3704DE14152BCDE000798372 /* HVSecondViewController.h */,
+				3704DE15152BCDE000798372 /* HVSecondViewController.m */,
+				37E849221522A6B400C89CBF /* HVViewController.h */,
+				37E849231522A6B400C89CBF /* HVViewController.m */,
 				37F19719151FE16D00A7249A /* MainStoryboard.storyboard */,
 				37F1972F151FEF3C00A7249A /* Resources */,
 				37F1970E151FE16D00A7249A /* Supporting Files */,
@@ -256,7 +261,6 @@
 				37F19731151FEF5F00A7249A /* hv_app@2x.png in Resources */,
 				37F19733151FF1B600A7249A /* Default.png in Resources */,
 				37F19735151FF20400A7249A /* Default@2x.png in Resources */,
-				37395BAB152144B2002540F2 /* HadithViewer.sqlite in Resources */,
 				37C78F5B1530C94F00BD081D /* bgrnd.jpg in Resources */,
 				37C78F6415310BD500BD081D /* tabbar.png in Resources */,
 				37C78F6515310BD500BD081D /* tabbar@2x.png in Resources */,
@@ -267,6 +271,7 @@
 				377653B915391C290021C452 /* 09-chat-2.png in Resources */,
 				377653BD15391D020021C452 /* 40-inbox.png in Resources */,
 				377653BE15391D020021C452 /* 18-envelope.png in Resources */,
+				37B01C76154E2E27001F2F54 /* HadithViewer.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +290,7 @@
 				37F19740151FFD9E00A7249A /* Hadith.m in Sources */,
 				37E849251522A6B400C89CBF /* HVViewController.m in Sources */,
 				3704DE16152BCDE000798372 /* HVSecondViewController.m in Sources */,
+				B53C1592154A45CB00C92B16 /* HVAboutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +367,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HadithViewer/HadithViewer-Prefix.pch";
 				INFOPLIST_FILE = "HadithViewer/HadithViewer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -372,7 +380,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HadithViewer/HadithViewer-Prefix.pch";
 				INFOPLIST_FILE = "HadithViewer/HadithViewer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
