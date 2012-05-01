@@ -256,6 +256,24 @@ NSInteger intSort(id num1, id num2, void *context)
                 case Conditions:
                     [names setValue:@"Conditions" forKey:[NSString stringWithFormat:@"%d",Conditions]];
                     break;
+                case Wasaayaa:
+                    [names setValue:@"Wills and Testaments (Wasaayaa)" forKey:[NSString stringWithFormat:@"%d",Wasaayaa]];
+                    break;
+                case FightingCause:
+                    [names setValue:@"Fighting for the Cause of Allah (Jihaad)" forKey:[NSString stringWithFormat:@"%d",FightingCause]];
+                    break;
+                case Khumus:
+                    [names setValue:@"One-fifth of Booty to the Cause of Allah (Khumus)" forKey:[NSString stringWithFormat:@"%d",Khumus]];
+                    break;
+                case BeginningCreation:
+                    [names setValue:@"Beginning of Creation" forKey:[NSString stringWithFormat:@"%d",BeginningCreation]];
+                    break;
+                case Prophets:
+                    [names setValue:@"Prophets" forKey:[NSString stringWithFormat:@"%d",Prophets]];
+                    break;
+                case Companions:
+                    [names setValue:@"Virtues and Merits of the Prophet (pbuh) and his Companions" forKey:[NSString stringWithFormat:@"%d",Companions]];
+                    break;
                 default:
                     [names setValue:@"CHAPTER 100" forKey:@"100"];
                     break;
