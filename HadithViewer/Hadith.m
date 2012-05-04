@@ -274,6 +274,15 @@ NSInteger intSort(id num1, id num2, void *context)
                 case Companions:
                     [names setValue:@"Virtues and Merits of the Prophet (pbuh) and his Companions" forKey:[NSString stringWithFormat:@"%d",Companions]];
                     break;
+                case CompanionsProphet:
+                    [names setValue:@"Companions of the Prophet" forKey:[NSString stringWithFormat:@"%d",CompanionsProphet]];
+                    break;
+                case Ansaar:
+                    [names setValue:@"Merits of the Helpers in Madinah (Ansaar)" forKey:[NSString stringWithFormat:@"%d",Ansaar]];
+                    break;
+                case AlMaghaazi:
+                    [names setValue:@"Military Expeditions led by the Prophet (pbuh) (Al-Maghaazi)" forKey:[NSString stringWithFormat:@"%d",AlMaghaazi]];
+                    break;
                 default:
                     [names setValue:@"CHAPTER 100" forKey:@"100"];
                     break;
