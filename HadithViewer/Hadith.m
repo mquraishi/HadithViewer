@@ -283,6 +283,108 @@ NSInteger intSort(id num1, id num2, void *context)
                 case AlMaghaazi:
                     [names setValue:@"Military Expeditions led by the Prophet (pbuh) (Al-Maghaazi)" forKey:[NSString stringWithFormat:@"%d",AlMaghaazi]];
                     break;
+                case Tafseer:
+                    [names setValue:@"Prophetic Commentary on the Qur'an (Tafseer of the Prophet (pbuh))" forKey:[NSString stringWithFormat:@"%d",Tafseer]];
+                    break;
+                case VirtuesQuran:
+                    [names setValue:@"Virtues of the Qur'an" forKey:[NSString stringWithFormat:@"%d",VirtuesQuran]];
+                    break;                    
+                case Nikaah:
+                    [names setValue:@"Wedlock, Marriage (Nikaah)" forKey:[NSString stringWithFormat:@"%d",Nikaah]];
+                    break;
+                case Divorce:
+                    [names setValue:@"Divorce" forKey:[NSString stringWithFormat:@"%d",Divorce]];
+                    break;
+                case SupportingFamily:
+                    [names setValue:@"Supporting the Family" forKey:[NSString stringWithFormat:@"%d",SupportingFamily]];
+                    break;
+                case Food:
+                    [names setValue:@"Food, Meals" forKey:[NSString stringWithFormat:@"%d",Food]];
+                    break;
+                case Aqiqa:
+                    [names setValue:@"Sacrifice on Occasion of Birth (`Aqiqa)" forKey:[NSString stringWithFormat:@"%d",Aqiqa]];
+                    break;
+                case Hunting:
+                    [names setValue:@"Hunting, Slaughtering" forKey:[NSString stringWithFormat:@"%d",Hunting]];
+                    break;
+                case AlAdha:
+                    [names setValue:@"Al-Adha Festival Sacrifice (Adaahi)" forKey:[NSString stringWithFormat:@"%d",AlAdha]];
+                    break;
+                case Drinks:
+                    [names setValue:@"Drinks" forKey:[NSString stringWithFormat:@"%d",Drinks]];
+                    break;
+                case Patients:
+                    [names setValue:@"Patients" forKey:[NSString stringWithFormat:@"%d",Patients]];
+                    break;
+                case Medicine:
+                    [names setValue:@"Medicine" forKey:[NSString stringWithFormat:@"%d",Medicine]];
+                    break;
+                case Dress:
+                    [names setValue:@"Dress" forKey:[NSString stringWithFormat:@"%d",Dress]];
+                    break;
+                case AlAdab:
+                    [names setValue:@"Good Manners and Form (Al-Adab)" forKey:[NSString stringWithFormat:@"%d",AlAdab]];
+                    break;
+                case AskingPermission:
+                    [names setValue:@"Asking Permission" forKey:[NSString stringWithFormat:@"%d",AskingPermission]];
+                    break;
+                case Invocations:
+                    [names setValue:@"Invocations" forKey:[NSString stringWithFormat:@"%d",Invocations]];
+                    break;
+                case ArRiqaq:
+                    [names setValue:@"To make the Heart Tender (Ar-Riqaq)" forKey:[NSString stringWithFormat:@"%d",ArRiqaq]];
+                    break;
+                case AlQadar:
+                    [names setValue:@"Divine Will (Al-Qadar)" forKey:[NSString stringWithFormat:@"%d",AlQadar]];
+                    break;
+                case OathsVows:
+                    [names setValue:@"Oaths and Vows" forKey:[NSString stringWithFormat:@"%d",OathsVows]];
+                    break;
+                case UnfulfilledOaths:
+                    [names setValue:@"Expiation for Unfulfilled Oaths" forKey:[NSString stringWithFormat:@"%d",UnfulfilledOaths]];
+                    break;
+                case AlFaraaid:
+                    [names setValue:@"Laws of Inheritance (Al-Faraa'id)" forKey:[NSString stringWithFormat:@"%d",AlFaraaid]];
+                    break;
+                case Hudood:
+                    [names setValue:@"Limits and Punishments set by Allah (Hudood)" forKey:[NSString stringWithFormat:@"%d",Hudood]];
+                    break;
+                case PunishmentDisbelievers:
+                    [names setValue:@"Punishment of Disbelievers at War with Allah and His Apostle" forKey:[NSString stringWithFormat:@"%d",PunishmentDisbelievers]];
+                    break;
+                case AdDiyat:
+                    [names setValue:@"Blood Money (Ad-Diyat)" forKey:[NSString stringWithFormat:@"%d",AdDiyat]];
+                    break;
+                case DealingApostates:
+                    [names setValue:@"Dealing with Apostates" forKey:[NSString stringWithFormat:@"%d",DealingApostates]];
+                    break;
+                case Ikraah:
+                    [names setValue:@"Saying Something under Compulsion (Ikraah)" forKey:[NSString stringWithFormat:@"%d",Ikraah]];
+                    break;
+                case Tricks:
+                    [names setValue:@"Tricks" forKey:[NSString stringWithFormat:@"%d",Tricks]];
+                    break;
+                case InterpretationDreams:
+                    [names setValue:@"Interpretation of Dreams" forKey:[NSString stringWithFormat:@"%d",InterpretationDreams]];
+                    break;
+                case Afflictions:
+                    [names setValue:@"Afflictions and the End of the World" forKey:[NSString stringWithFormat:@"%d",Afflictions]];
+                    break;
+                case Ahkaam:
+                    [names setValue:@"Judgments (Ahkaam)" forKey:[NSString stringWithFormat:@"%d",Ahkaam]];
+                    break;
+                case Wishes:
+                    [names setValue:@"Wishes" forKey:[NSString stringWithFormat:@"%d",Wishes]];
+                    break;
+                case TruthfulPerson:
+                    [names setValue:@"Accepting Information Given by a Truthful Person" forKey:[NSString stringWithFormat:@"%d",TruthfulPerson]];
+                    break;
+                case HoldingFastSunnah:
+                    [names setValue:@"Holding Fast to the Qur'an and Sunnah" forKey:[NSString stringWithFormat:@"%d",HoldingFastSunnah]];
+                    break;
+                case Tawheed:
+                    [names setValue:@"Oneness, Uniqueness Of Allah (Tawheed)" forKey:[NSString stringWithFormat:@"%d",Tawheed]];
+                    break;
                 default:
                     [names setValue:@"CHAPTER 100" forKey:@"100"];
                     break;
