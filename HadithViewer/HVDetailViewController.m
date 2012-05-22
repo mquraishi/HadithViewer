@@ -103,8 +103,7 @@ void (^showAlertWithTitlesAndMsg)(id, NSString *, NSString *, NSString *) = ^(id
     
     [self.navigationItem setTitle:[NSString stringWithFormat:@"Book %d - Hadith #%d", hBookNumber, hNumber]];
     
-    //UIImage *pattern = [UIImage imageNamed:@"databgrnd.jpg"];
-    UIImage *pattern = [UIImage imageNamed:@"bgrnd.jpg"];
+    UIImage *pattern = [UIImage imageNamed:@"bgrndNS.jpg"];
 
     
     // Set the image as a background pattern
