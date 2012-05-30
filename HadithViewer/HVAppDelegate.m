@@ -112,13 +112,22 @@
         return __persistentStoreCoordinator;
     }
 
-    
-    NSString *storePath = [[self applicationDocumentsDirectory] stringByAppendingPathComponent: @"HadithViewer.sqlite"];
     /*
      Set up the store.
      For the sake of illustration, provide a pre-populated default store.
      */
     NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSArray *dirPaths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, 
+                                                   NSUserDomainMask, YES);
+    NSString *docsDir = [dirPaths objectAtIndex:0];
+    NSString *newDir = [docsDir stringByAppendingPathComponent:@"Application Support"];
+    if ([fileManager createDirectoryAtPath:newDir withIntermediateDirectories:YES attributes:nil error: NULL] == NO)
+    {
+        abort();
+    }
+    
+    NSString *storePath = [[self applicationDocumentsDirectory] stringByAppendingPathComponent: @"HadithViewer.sqlite"];
+    
     // If the expected store doesn't exist, copy the default store.
     if (![fileManager fileExistsAtPath:storePath]) {
         NSString *defaultStorePath = [[NSBundle mainBundle] pathForResource:@"HadithViewer" ofType:@"sqlite"];
@@ -146,8 +155,7 @@
  Returns the path to the application's documents directory.
  */
 - (NSString *)applicationDocumentsDirectory {
-    
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES);
     NSString *basePath = ([paths count] > 0) ? [paths objectAtIndex:0] : nil;
     return basePath;
 }
