@@ -28,10 +28,10 @@
     self.navigationItem.backBarButtonItem = backButton;
     backButton.tintColor = [UIColor blackColor];
     
-    UIImage *pattern = [UIImage imageNamed:@"bgrndNS.jpg"];
+    //UIImage *pattern = [UIImage imageNamed:@"bgrndNS.jpg"];
     
     // Set the image as a background pattern
-    [[self view] setBackgroundColor:[UIColor colorWithPatternImage:pattern]];
+    //[[self view] setBackgroundColor:[UIColor colorWithPatternImage:pattern]];
     
     sortedKeys = [Hadith returnSortedArrayOfKeys:self.bookNames];
 }

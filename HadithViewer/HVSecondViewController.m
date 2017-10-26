@@ -39,10 +39,10 @@
     self.navigationItem.backBarButtonItem = backButton;
     [self.navigationItem setTitle:[NSString stringWithFormat:@"Volume %d - Book %d", self.displayVolume, self.displayBook]];
     backButton.tintColor = [UIColor blackColor];
-    UIImage *pattern = [UIImage imageNamed:@"bgrndNS.jpg"];
+    //UIImage *pattern = [UIImage imageNamed:@"bgrndNS.jpg"];
     
     // Set the image as a background pattern
-    [[self view] setBackgroundColor:[UIColor colorWithPatternImage:pattern]];
+    //[[self view] setBackgroundColor:[UIColor colorWithPatternImage:pattern]];
 }
 
 - (void)viewDidUnload

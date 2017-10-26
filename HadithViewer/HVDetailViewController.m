@@ -103,11 +103,11 @@ void (^showAlertWithTitlesAndMsg)(id, NSString *, NSString *, NSString *) = ^(id
     
     [self.navigationItem setTitle:[NSString stringWithFormat:@"Book %d - Hadith #%d", hBookNumber, hNumber]];
     
-    UIImage *pattern = [UIImage imageNamed:@"bgrndNS.jpg"];
+    //UIImage *pattern = [UIImage imageNamed:@"bgrndNS.jpg"];
 
     
     // Set the image as a background pattern
-    [[self view] setBackgroundColor:[UIColor colorWithPatternImage:pattern]];
+    //[[self view] setBackgroundColor:[UIColor colorWithPatternImage:pattern]];
         
     // Do any additional setup after loading the view, typically from a nib.
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStyleDone target:nil action:nil];
@@ -242,7 +242,7 @@ void (^showAlertWithTitlesAndMsg)(id, NSString *, NSString *, NSString *) = ^(id
 // Dismisses the people picker and shows the application when users tap Cancel. 
 - (void)peoplePickerNavigationControllerDidCancel:(ABPeoplePickerNavigationController *)peoplePicker;
 {
-	[self dismissModalViewControllerAnimated:YES];
+	[self dismissViewControllerAnimated:YES completion:nil];
 }
 
 
@@ -257,13 +257,13 @@ void (^showAlertWithTitlesAndMsg)(id, NSString *, NSString *, NSString *) = ^(id
         self.emailSelected = true;
         self.smsSelected = false;
         // Show the picker 
-        [self presentModalViewController:self.peoplePicker animated:YES];
+        [self presentViewController:self.peoplePicker animated:YES completion:nil];
     } else if ([[item title] isEqualToString:@"Send Text"]) {
         [self showPeoplePickerController];
         self.smsSelected = true;
         self.emailSelected = false;
         // Show the picker 
-        [self presentModalViewController:self.peoplePicker animated:YES];
+        [self presentViewController:self.peoplePicker animated:YES completion:nil];
     }
 }
 
@@ -285,11 +285,11 @@ void (^showAlertWithTitlesAndMsg)(id, NSString *, NSString *, NSString *) = ^(id
         }
         [mailPicker setMessageBody:emailBody isHTML:NO];
         mailPicker.navigationBar.barStyle = UIBarStyleBlack;
-        [self.peoplePicker presentModalViewController:mailPicker animated:YES];
+        [self.peoplePicker presentViewController:mailPicker animated:YES completion:nil];
     } else {
         showAlertWithTitlesAndMsg(self, @"Email", @"Device not capable of sending emails.", @"OK");
        // [self.navigationController popViewControllerAnimated:YES];
-        [self dismissModalViewControllerAnimated:YES];
+        [self dismissViewControllerAnimated:YES completion:nil];
     }
 }
 
@@ -307,11 +307,11 @@ void (^showAlertWithTitlesAndMsg)(id, NSString *, NSString *, NSString *) = ^(id
 
         picker.recipients = [NSArray arrayWithObjects:(self.phoneNumber.length == 0 ? @"":self.phoneNumber),nil];
         picker.messageComposeDelegate = self;
-        [self.peoplePicker presentModalViewController:picker animated:YES];
+        [self.peoplePicker presentViewController:picker animated:YES completion:nil];
     } else {
         showAlertWithTitlesAndMsg(self, @"SMS", @"Device not capable of sending text messages.", @"OK");
         //[self.navigationController popViewControllerAnimated:YES];
-        [self dismissModalViewControllerAnimated:YES];
+        [self dismissViewControllerAnimated:YES completion:nil];
     }
 }
 
@@ -335,7 +335,7 @@ void (^showAlertWithTitlesAndMsg)(id, NSString *, NSString *, NSString *) = ^(id
         }
 			break;
 	}
-	[self dismissModalViewControllerAnimated:YES];
+	[self dismissViewControllerAnimated:YES completion:nil];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
@@ -355,7 +355,7 @@ void (^showAlertWithTitlesAndMsg)(id, NSString *, NSString *, NSString *) = ^(id
         }
 			break;
 	}
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
     [self.navigationController popViewControllerAnimated:YES];
 }
 

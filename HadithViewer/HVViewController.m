@@ -26,10 +26,10 @@
     if (self = [super init])
     {
         // Create image from the desired pattern (jpg or png)
-        UIImage *pattern = [UIImage imageNamed:@"bgrnd.jpg"];
+        //UIImage *pattern = [UIImage imageNamed:@"bgrnd.jpg"];
         
         // Set the image as a background pattern
-        [[self view] setBackgroundColor:[UIColor colorWithPatternImage:pattern]];
+        //[[self view] setBackgroundColor:[UIColor colorWithPatternImage:pattern]];
     }
     return self;
 }
@@ -60,10 +60,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    UIImage *pattern = [UIImage imageNamed:@"bgrnd.jpg"];
+    //UIImage *pattern = [UIImage imageNamed:@"bgrnd.jpg"];
     
     // Set the image as a background pattern
-    [[self view] setBackgroundColor:[UIColor colorWithPatternImage:pattern]];
+    //[[self view] setBackgroundColor:[UIColor colorWithPatternImage:pattern]];
     // Do any additional setup after loading the view from its nib.
 }
 
