@@ -10,6 +10,10 @@
 		3704DE16152BCDE000798372 /* HVSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3704DE15152BCDE000798372 /* HVSecondViewController.m */; };
 		372140DD153BA11200A882A4 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372140DB153BA11200A882A4 /* AddressBook.framework */; };
 		372140DE153BA11200A882A4 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 372140DC153BA11200A882A4 /* AddressBookUI.framework */; };
+		376C16DF184C04900007A6E3 /* hv_app_58.png in Resources */ = {isa = PBXBuildFile; fileRef = 376C16DB184C04900007A6E3 /* hv_app_58.png */; };
+		376C16E0184C04900007A6E3 /* hv_app_80.png in Resources */ = {isa = PBXBuildFile; fileRef = 376C16DC184C04900007A6E3 /* hv_app_80.png */; };
+		376C16E1184C04900007A6E3 /* hv_app_29.png in Resources */ = {isa = PBXBuildFile; fileRef = 376C16DD184C04900007A6E3 /* hv_app_29.png */; };
+		376C16E2184C04900007A6E3 /* hv_app_ret.png in Resources */ = {isa = PBXBuildFile; fileRef = 376C16DE184C04900007A6E3 /* hv_app_ret.png */; };
 		377653B815391C290021C452 /* 08-chat.png in Resources */ = {isa = PBXBuildFile; fileRef = 377653B615391C290021C452 /* 08-chat.png */; };
 		377653B915391C290021C452 /* 09-chat-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 377653B715391C290021C452 /* 09-chat-2.png */; };
 		377653BD15391D020021C452 /* 40-inbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 377653BB15391D020021C452 /* 40-inbox.png */; };
@@ -42,6 +46,7 @@
 		37F19733151FF1B600A7249A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F19732151FF1B600A7249A /* Default.png */; };
 		37F19735151FF20400A7249A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37F19734151FF20400A7249A /* Default@2x.png */; };
 		37F19740151FFD9E00A7249A /* Hadith.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F1973F151FFD9E00A7249A /* Hadith.m */; };
+		37FD7FFF17EE4D4E0007114F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37FD7FFE17EE4D4E0007114F /* Default-568h@2x.png */; };
 		B53C1592154A45CB00C92B16 /* HVAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B53C1591154A45CB00C92B16 /* HVAboutViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +55,10 @@
 		3704DE15152BCDE000798372 /* HVSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVSecondViewController.m; sourceTree = "<group>"; };
 		372140DB153BA11200A882A4 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		372140DC153BA11200A882A4 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		376C16DB184C04900007A6E3 /* hv_app_58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hv_app_58.png; sourceTree = SOURCE_ROOT; };
+		376C16DC184C04900007A6E3 /* hv_app_80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hv_app_80.png; sourceTree = SOURCE_ROOT; };
+		376C16DD184C04900007A6E3 /* hv_app_29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hv_app_29.png; sourceTree = SOURCE_ROOT; };
+		376C16DE184C04900007A6E3 /* hv_app_ret.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hv_app_ret.png; sourceTree = SOURCE_ROOT; };
 		377653B615391C290021C452 /* 08-chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "08-chat.png"; sourceTree = "<group>"; };
 		377653B715391C290021C452 /* 09-chat-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "09-chat-2.png"; sourceTree = "<group>"; };
 		377653BB15391D020021C452 /* 40-inbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "40-inbox.png"; sourceTree = "<group>"; };
@@ -67,7 +76,7 @@
 		37CF634E156B1C530029598E /* bgrndNS@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bgrndNS@2x.jpg"; sourceTree = "<group>"; };
 		37E849221522A6B400C89CBF /* HVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVViewController.h; sourceTree = "<group>"; };
 		37E849231522A6B400C89CBF /* HVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVViewController.m; sourceTree = "<group>"; };
-		37F19701151FE16D00A7249A /* Hadith Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hadith Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37F19701151FE16D00A7249A /* HadithViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HadithViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F19705151FE16D00A7249A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		37F19707151FE16D00A7249A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		37F19709151FE16D00A7249A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -90,6 +99,7 @@
 		37F19734151FF20400A7249A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
 		37F1973E151FFD9E00A7249A /* Hadith.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hadith.h; sourceTree = "<group>"; };
 		37F1973F151FFD9E00A7249A /* Hadith.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hadith.m; sourceTree = "<group>"; };
+		37FD7FFE17EE4D4E0007114F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B53C1590154A45CB00C92B16 /* HVAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVAboutViewController.h; sourceTree = "<group>"; };
 		B53C1591154A45CB00C92B16 /* HVAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HVAboutViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +136,7 @@
 		37F196F6151FE16D00A7249A = {
 			isa = PBXGroup;
 			children = (
+				37FD7FFE17EE4D4E0007114F /* Default-568h@2x.png */,
 				37F19704151FE16D00A7249A /* Frameworks */,
 				37F1970D151FE16D00A7249A /* HadithViewer */,
 				37F19702151FE16D00A7249A /* Products */,
@@ -135,7 +146,7 @@
 		37F19702151FE16D00A7249A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				37F19701151FE16D00A7249A /* Hadith Viewer.app */,
+				37F19701151FE16D00A7249A /* HadithViewer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -191,6 +202,10 @@
 		37F1972F151FEF3C00A7249A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				376C16DB184C04900007A6E3 /* hv_app_58.png */,
+				376C16DC184C04900007A6E3 /* hv_app_80.png */,
+				376C16DD184C04900007A6E3 /* hv_app_29.png */,
+				376C16DE184C04900007A6E3 /* hv_app_ret.png */,
 				37C78F5A1530C94F00BD081D /* bgrnd.jpg */,
 				37CF634C156B1C530029598E /* bgrnd@2x.jpg */,
 				37CF634D156B1C530029598E /* bgrndNS.jpg */,
@@ -215,9 +230,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		37F19700151FE16D00A7249A /* Hadith Viewer */ = {
+		37F19700151FE16D00A7249A /* HadithViewer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 37F19727151FE16D00A7249A /* Build configuration list for PBXNativeTarget "Hadith Viewer" */;
+			buildConfigurationList = 37F19727151FE16D00A7249A /* Build configuration list for PBXNativeTarget "HadithViewer" */;
 			buildPhases = (
 				37F196FD151FE16D00A7249A /* Sources */,
 				37F196FE151FE16D00A7249A /* Frameworks */,
@@ -227,9 +242,9 @@
 			);
 			dependencies = (
 			);
-			name = "Hadith Viewer";
+			name = HadithViewer;
 			productName = HadithViewer;
-			productReference = 37F19701151FE16D00A7249A /* Hadith Viewer.app */;
+			productReference = 37F19701151FE16D00A7249A /* HadithViewer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -239,8 +254,13 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = HV;
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = NA;
+				TargetAttributes = {
+					37F19700151FE16D00A7249A = {
+						DevelopmentTeam = H73PW9N475;
+					};
+				};
 			};
 			buildConfigurationList = 37F196FB151FE16D00A7249A /* Build configuration list for PBXProject "HadithViewer" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -254,7 +274,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				37F19700151FE16D00A7249A /* Hadith Viewer */,
+				37F19700151FE16D00A7249A /* HadithViewer */,
 			);
 		};
 /* End PBXProject section */
@@ -264,11 +284,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				376C16E0184C04900007A6E3 /* hv_app_80.png in Resources */,
 				37F19712151FE16D00A7249A /* InfoPlist.strings in Resources */,
 				37F1971B151FE16D00A7249A /* MainStoryboard.storyboard in Resources */,
 				37F1972E151FEF3300A7249A /* hv_app.png in Resources */,
 				37F19731151FEF5F00A7249A /* hv_app@2x.png in Resources */,
+				376C16DF184C04900007A6E3 /* hv_app_58.png in Resources */,
 				37F19733151FF1B600A7249A /* Default.png in Resources */,
+				37FD7FFF17EE4D4E0007114F /* Default-568h@2x.png in Resources */,
+				376C16E1184C04900007A6E3 /* hv_app_29.png in Resources */,
 				37F19735151FF20400A7249A /* Default@2x.png in Resources */,
 				37C78F5B1530C94F00BD081D /* bgrnd.jpg in Resources */,
 				37C78F6415310BD500BD081D /* tabbar.png in Resources */,
@@ -282,6 +306,7 @@
 				377653BE15391D020021C452 /* 18-envelope.png in Resources */,
 				37B01C76154E2E27001F2F54 /* HadithViewer.sqlite in Resources */,
 				37CF634F156B1C530029598E /* bgrnd@2x.jpg in Resources */,
+				376C16E2184C04900007A6E3 /* hv_app_ret.png in Resources */,
 				37CF6350156B1C530029598E /* bgrndNS.jpg in Resources */,
 				37CF6351156B1C530029598E /* bgrndNS@2x.jpg in Resources */,
 			);
@@ -332,12 +357,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -345,10 +387,14 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -357,16 +403,36 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -376,11 +442,16 @@
 		37F19728151FE16D00A7249A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HadithViewer/HadithViewer-Prefix.pch";
 				INFOPLIST_FILE = "HadithViewer/HadithViewer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.atif.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "78b5fd83-2267-4b3e-9137-b315194004a1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "78b5fd83-2267-4b3e-9137-b315194004a1";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -389,11 +460,16 @@
 		37F19729151FE16D00A7249A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HadithViewer/HadithViewer-Prefix.pch";
 				INFOPLIST_FILE = "HadithViewer/HadithViewer-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.atif.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "78b5fd83-2267-4b3e-9137-b315194004a1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "78b5fd83-2267-4b3e-9137-b315194004a1";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -411,7 +487,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		37F19727151FE16D00A7249A /* Build configuration list for PBXNativeTarget "Hadith Viewer" */ = {
+		37F19727151FE16D00A7249A /* Build configuration list for PBXNativeTarget "HadithViewer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				37F19728151FE16D00A7249A /* Debug */,
